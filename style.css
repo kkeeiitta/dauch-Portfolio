@@ -1,0 +1,79 @@
+body { 
+    background: #121212; 
+    color: #fff; 
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 最初の画面 */
+.hero {
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    /* 横方向の配置を中央に設定 */
+    justify-content: center; 
+    /* 縦方向の配置を上寄せに設定 */
+    align-items: center;
+    
+    /* 左側の余白を消して、中央寄せを優先 */
+    padding-left: 0; 
+    padding-top: 1vh;
+}
+
+#typing { 
+    font-size: 6rem; 
+    color: #00ff66; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* ふわっと出るための設定 */
+.fade-in-el { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: all 1s ease-out; 
+}
+.fade-in-el.is-visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* セクションの余白（重要！） */
+.section {
+    width: 100%;         /* 幅を固定 */
+    margin: 0 auto;       /* これで左右均等の余白が生まれ、中央寄せになる */
+    padding: 40px 0;
+    border-bottom: 1px solid #333;
+    
+    /* 左右のバランスを崩す原因になる padding-left を削除 */
+    padding-left: 0;      
+    padding-right: 0;
+    
+    /* もし中の文字まで真ん中にしたいなら以下を追加 */
+    text-align: center; 
+}
+h2 {
+    color: #00ff66; /* メッセージと同じ緑色で統一 */
+    font-size: 4rem; /* ここでデカくします！ */
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #00ff66; /* メッセージと同じ緑色で統一 */
+    font-size: 4rem; /* ここでデカくします！ */
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.5rem; /* 本文も少し大きく */
+    line-height: 1.6;
+}
+
+li {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
