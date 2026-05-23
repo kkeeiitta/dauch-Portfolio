@@ -8,15 +8,12 @@ body {
     align-items: center;
 }
 
-
 .hero {
     min-height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    
-    padding-left: 0; 
     padding-top: 1vh;
 }
 
@@ -39,54 +36,37 @@ body {
 }
 
 .section {
-    width: 100%;         /* 幅を固定 */
-    margin: 0 auto;       /*左右均等の余白が生まれ中央寄せになる */
-    padding: 40px 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0; /* 上下40px、左右0px */
     border-bottom: 1px solid #333;
-    
-    padding-left: 0;      
-    padding-right: 0;
-    
     text-align: center; 
 }
-h2 {
+
+h2, h3 {
     color: #00ff66; 
     font-size: 4rem; 
     margin-bottom: 30px;
 }
 
-h3 {
-    color: #00ff66; 
-    font-size: 4rem; 
-    margin-bottom: 30px;
-}
-
-p {
+p, li {
     font-size: 1.5rem; 
     line-height: 1.6;
 }
 
-li {
-    font-size: 1.5rem;
-    line-height: 1.6;
-}
-
-
-/* スマホ画面（画面幅が600px以下）の時の調整 */
+/* スマホ調整 */
 @media screen and (max-width: 600px) {
     #typing {
-        font-size: 2.5rem; /* スマホ用に文字を小さく */
-        white-space: normal; /* 折り返しを許可 */
+        font-size: 2.5rem;
+        white-space: normal;
         text-align: center;
-        padding: 0 10px; /* 画面端に密着しないように余白 */
+        padding: 0 10px;
     }
-
     h2, h3 {
-        font-size: 2.5rem; /* 見出しもスマホ用に小さく */
+        font-size: 2.5rem;
     }
-
     p, li {
-        font-size: 1.2rem; /* 本文も少し小さくして読みやすく */
-        padding: 0 15px; /* 両端に余白を作る */
+        font-size: 1.2rem;
+        padding: 0 15px;
     }
 }
